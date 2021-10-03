@@ -1,0 +1,68 @@
+// =========== Navbar Start ============
+nav {
+  background: $gray;
+  padding: 6px 0px;
+  z-index: 1;
+
+  .main {
+    // display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-item {
+      display: flex;
+      list-style-type: none;
+      margin-left: auto;
+
+      li {
+        margin: 0 20px;
+
+        a {
+          font-size: 14px;
+          color: #fff;
+          text-decoration: none;
+          font-weight: weight(medium);
+          transition: all 0.3s;
+
+          &:hover {
+            color: $lightRed;
+          }
+        }
+      }
+
+      li:last-child {
+        margin-right: 0;
+      }
+    }
+    .nav-icon {
+      button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        i {
+          color: #fff;
+          font-size: 24px;
+        }
+      }
+      #nav-Btn2 {
+        display: none;
+      }
+    }
+  }
+}
+
+// ===== js Class Start =====
+
+.navlist-show {
+  transform: translateY(0) !important;
+}
+.show {
+  display: block !important;
+}
+.hide {
+  display: none !important;
+}
+
+// ===== js Class End =====
+
+// =========== Navbar Start ============

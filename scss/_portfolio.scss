@@ -1,0 +1,131 @@
+// =========== Portfolio Start ============
+
+.portfolio-box {
+  background: $lightRed;
+}
+
+.portfolio-menu {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  h1 {
+    text-align: center;
+    font-weight: weight(bold);
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    color: #333;
+
+    span {
+      color: #fff;
+    }
+  }
+
+  .portfolio {
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .portfolio__item {
+      margin-bottom: 20px;
+
+      .img-box {
+        position: relative;
+        width: 100%;
+        margin-bottom: 4px;
+
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+        .portfolio_fuzzy {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          background: #000;
+          transition: all 0.4s;
+          opacity: 0;
+        }
+        .portfolio_info {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform: translateY(-30px);
+          transition: all 0.4s;
+          opacity: 0;
+
+          a {
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 13px;
+            border: 2px solid #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-weight: weight(medium);
+            cursor: pointer;
+          }
+        }
+        &:hover .portfolio_fuzzy {
+          opacity: 0.3;
+        }
+        &:hover .portfolio_info {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      .tag__link {
+        background: #fff;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.4s;
+
+        a {
+          font-size: 15px;
+          color: $lightRed;
+          display: block;
+          text-transform: capitalize;
+          text-decoration: none;
+          font-weight: weight(medium);
+          padding: 10px 0px;
+        }
+        &:hover {
+          background: #e6e6e6;
+        }
+      }
+    }
+  }
+  .all_portfolio_btn {
+    width: 100%;
+    text-align: center !important;
+    margin-top: 20px;
+
+    a {
+      background: #fff;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      color: $lightRed;
+      padding: 8px 30px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: weight(medium);
+      transition: all 0.4s;
+
+      &:hover {
+        background: transparent;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// =========== Portfolio End ============

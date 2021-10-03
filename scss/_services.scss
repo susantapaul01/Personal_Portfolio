@@ -1,0 +1,123 @@
+.servies-menu {
+  padding: 50px 0px;
+
+  h1 {
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-weight: weight(bold);
+    margin-bottom: 40px;
+    color: #333;
+
+    span {
+      color: $lightRed;
+    }
+  }
+  .services {
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .services__box {
+      padding: 20px;
+      background: transparent;
+      border: 1px solid #333;
+      border-radius: 4px;
+      margin-bottom: 20px;
+
+      i {
+        font-size: 55px;
+        color: #333;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+        transition: all 0.3s;
+      }
+      h3 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+        font-weight: weight(bold);
+        transition: all 0.3s;
+      }
+      .desh {
+        background: $lightRed;
+        width: 15%;
+        margin: 0 auto;
+        height: 4px;
+        border-radius: 6px;
+        margin-bottom: 15px;
+      }
+      p {
+        text-align: center;
+        color: #333;
+        line-height: 1.8;
+        margin-bottom: 30px;
+        font-weight: weight(medium);
+      }
+      .services__box__link {
+        width: 100%;
+        text-align: center !important;
+        margin-bottom: 10px;
+      }
+      a {
+        width: 100%;
+        font-size: 14px;
+        font-weight: weight(medium);
+        margin: 0 auto;
+        padding: 10px 25px;
+        border-radius: 4px;
+        color: $lightRed;
+        border: 2px solid $lightRed;
+        background: transparent;
+        text-transform: capitalize;
+        text-decoration: none;
+        transition: all 0.3s;
+
+        &:hover {
+          background: $lightRed;
+          color: #fff;
+        }
+      }
+      &:hover h3,
+      &:hover i {
+        color: $lightRed;
+      }
+    }
+  }
+  .services__bottom {
+    margin: 60px;
+    text-align: center !important;
+    p {
+      font-size: 20px;
+      color: #333;
+      text-transform: capitalize;
+      font-weight: weight(bold);
+      margin-bottom: 20px;
+
+      span {
+        color: $lightRed;
+      }
+    }
+
+    a {
+      display: inline-block;
+      margin: 0 auto;
+      background: transparent;
+      border: 2px solid $lightRed;
+      border-radius: 5px;
+      padding: 8px 25px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: weight(bold);
+      color: $lightRed;
+      transition: all 0.3s;
+
+      &:hover {
+        background: $lightRed;
+        color: #fff;
+      }
+    }
+  }
+}

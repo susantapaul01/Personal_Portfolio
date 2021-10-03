@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$gray: #878787;
+$lightRed: #d43b3b;
+
+$font-weights: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+  'extraBold': 900,
+);
+
+@function weight($value) {
+  @return map-get($font-weights, $value);
+}
+
+@mixin mx-15 {
+  margin: 0px 15px;
+}
+
+// ======== media query frame start ==========
+
+@mixin mobileNav {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin lessMd {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+// ======== media query frame end ==========
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+}
