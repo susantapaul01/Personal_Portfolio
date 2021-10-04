@@ -13,7 +13,7 @@
     font-weight: weight(bold);
     margin-bottom: 40px;
     letter-spacing: 3px;
-    color: #333;
+    color: $para;
 
     span {
       color: #fff;
@@ -38,13 +38,7 @@
           display: block;
         }
         .portfolio_fuzzy {
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: 0;
-          bottom: 0;
-          width: 100%;
-          height: 100%;
+          @include backgroundShadow;
           background: #000;
           transition: all 0.4s;
           opacity: 0;

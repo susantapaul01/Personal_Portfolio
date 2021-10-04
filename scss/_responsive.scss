@@ -79,9 +79,47 @@
       width: 100%;
     }
   }
+  //   ========
+  .banner {
+    .banner__heading {
+      font-size: 24px;
+    }
+    .banner__designation {
+      font-size: 20px;
+    }
+    #{&}__text {
+      width: 85%;
+    }
+  }
+  //   =========
+  .about {
+    @include mx-15;
+    flex-direction: column;
+
+    #{&}__img {
+      width: 100%;
+      margin: 25px 0px;
+    }
+
+    #{&}__details {
+      width: 100%;
+      padding: 15px;
+      box-shadow: 0px 0px 10px 5px #f2f2fc;
+
+      .heading-2 {
+        display: none;
+      }
+
+      p {
+        margin-bottom: 14px;
+      }
+    }
+  }
+  //   ======
 }
 // ========= [ Width: up to 768px] ==========
 @include md {
+  // ======
   .portfolio-menu {
     @include mx-15;
 
@@ -99,12 +137,35 @@
       width: 48%;
     }
   }
+  //   =======
+  .about {
+    @include mx-15;
+    flex-direction: column;
+
+    #{&}__img {
+      width: 100%;
+      margin: 25px 0px;
+    }
+
+    #{&}__details {
+      width: 100%;
+      padding: 15px;
+      box-shadow: 0px 0px 10px 5px #f2f2fc;
+
+      .heading-2 {
+        display: none;
+      }
+      p {
+        margin-bottom: 14px;
+      }
+    }
+  }
 }
 
 // ========= [ Width: up to 992px] ==========
 @include lg {
   .container {
-    width: 90%;
+    width: 95%;
   }
   // ========
   nav {
@@ -133,6 +194,29 @@
 
     .services__box {
       width: 32%;
+    }
+  }
+  //   ========
+  .about {
+    margin: 0px 0px;
+    flex-direction: row;
+    .heading-1 {
+      display: none;
+    }
+
+    #{&}__img {
+      width: 48%;
+      margin: 0px 0px;
+    }
+
+    #{&}__details {
+      width: 48%;
+      padding: 0;
+      box-shadow: none;
+
+      .heading-2 {
+        display: block;
+      }
     }
   }
 }
