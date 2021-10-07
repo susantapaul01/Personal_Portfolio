@@ -1,24 +1,25 @@
-// ============ Responsive Navbar ===============
-
+// ============ Responsive Navbar Start ===============
+// ===== [ Width: less then 992px] =====
 @include mobileNav {
-  .container {
-    width: 100%;
+  nav {
+    .container {
+      width: 100% !important;
+    }
   }
 
   nav {
     .main {
-      @include mx-15;
-
+      @include mx-10;
       .nav-item {
         position: absolute;
+        width: 100%;
         right: 0;
-        top: 54px;
+        top: 65px;
         flex-direction: column;
         align-items: center;
-        width: 100%;
         background: $gray;
         border-top: 1px solid #ccc;
-        transform: translateY(-120%);
+        transform: translateY(-125%);
 
         li {
           margin: 12px 0px;
@@ -58,27 +59,10 @@
     transform: scale(1);
   }
 }
+// ============ Responsive Navbar End ===============
 
 // ========= [ Width: less then 768px] ==========
 @include lessMd {
-  // =====
-  .portfolio-menu {
-    @include mx-15;
-
-    .portfolio {
-      .portfolio__item {
-        width: 100%;
-      }
-    }
-  }
-  //   ======
-  .services {
-    @include mx-15;
-
-    .services__box {
-      width: 100%;
-    }
-  }
   //   ========
   .banner {
     .banner__heading {
@@ -93,7 +77,7 @@
   }
   //   =========
   .about {
-    @include mx-15;
+    @include mx-10;
     flex-direction: column;
 
     #{&}__img {
@@ -116,12 +100,97 @@
     }
   }
   //   ======
+  .services {
+    @include mx-10;
+
+    .services__box {
+      width: 100%;
+    }
+  }
+  // =====
+  .portfolio-menu {
+    @include mx-10;
+
+    .portfolio {
+      .portfolio__item {
+        width: 100%;
+      }
+    }
+  }
+  //   ======
+  .contactus {
+    margin: 50px 0px 20px;
+
+    .contact {
+      @include mx-10;
+      flex-direction: column;
+
+      .contact__box {
+        width: 100%;
+        margin-bottom: 25px;
+
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  // ========
+  form {
+    @include mx-10;
+
+    .form__part1 {
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  // ============
+  footer {
+    .footer {
+      @include mx-10;
+    }
+  }
 }
+
 // ========= [ Width: up to 768px] ==========
 @include md {
+  //   =======
+  .about {
+    @include mx-10;
+    flex-direction: column;
+
+    #{&}__img {
+      width: 100%;
+      margin: 25px 0px;
+    }
+
+    #{&}__details {
+      width: 100%;
+      padding: 15px;
+      box-shadow: 0px 0px 10px 5px #f2f2fc;
+
+      .heading-2 {
+        display: none;
+      }
+      p {
+        margin-bottom: 14px;
+      }
+    }
+  }
+  //   ======
+  .services {
+    @include mx-10;
+
+    .services__box {
+      width: 48%;
+    }
+  }
   // ======
   .portfolio-menu {
-    @include mx-15;
+    @include mx-10;
 
     .portfolio {
       .portfolio__item {
@@ -130,34 +199,29 @@
     }
   }
   //   ======
-  .services {
-    @include mx-15;
+  .contact {
+    @include mx-10;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-    .services__box {
-      width: 48%;
+    .contact__box {
+      width: 32%;
+      margin-bottom: 20px;
+
+      i {
+        font-size: 35px;
+      }
     }
   }
-  //   =======
-  .about {
-    @include mx-15;
-    flex-direction: column;
-
-    #{&}__img {
-      width: 100%;
-      margin: 25px 0px;
+  form {
+    .form__part1 {
+      display: flex;
     }
-
-    #{&}__details {
-      width: 100%;
-      padding: 15px;
-      box-shadow: 0px 0px 10px 5px #f2f2fc;
-
-      .heading-2 {
-        display: none;
-      }
-      p {
-        margin-bottom: 14px;
-      }
+  }
+  // ============
+  footer {
+    .footer {
+      @include mx-10;
     }
   }
 }
@@ -167,7 +231,7 @@
   .container {
     width: 95%;
   }
-  // ========
+  // ==== Navbar ====
   nav {
     .main {
       .nav-item {
@@ -178,27 +242,9 @@
       }
     }
   }
-  // ========
-  .portfolio-menu {
-    margin: 0px 0px;
-    .portfolio {
-      .portfolio__item {
-        width: 32%;
-      }
-    }
-  }
-
-  //   ======
-  .services {
-    margin: 0px 0px;
-
-    .services__box {
-      width: 32%;
-    }
-  }
-  //   ========
+  // ===== About ====
   .about {
-    margin: 0px 0px;
+    @include mx-none;
     flex-direction: row;
     .heading-1 {
       display: none;
@@ -217,6 +263,34 @@
       .heading-2 {
         display: block;
       }
+    }
+  }
+  // ===== services =====
+  .services {
+    @include mx-none;
+
+    .services__box {
+      width: 32%;
+    }
+  }
+  // ==== portfolio ====
+  .portfolio-menu {
+    @include mx-none;
+    .portfolio {
+      .portfolio__item {
+        width: 32%;
+      }
+    }
+  }
+  //   ===== Contact Us ====
+  .contact,
+  form {
+    @include mx-none;
+  }
+  //   ===== Footer ======
+  footer {
+    .footer {
+      @include mx-none;
     }
   }
 }

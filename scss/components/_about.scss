@@ -69,9 +69,8 @@
       padding: 10px 0px;
 
       a {
-        border: 2px solid $para;
-        width: 45px;
-        height: 45px;
+        width: 42px;
+        height: 42px;
         border-radius: 50%;
         margin: 0 12px;
         display: flex;
@@ -81,22 +80,38 @@
         transition: all 0.3s;
 
         i {
-          font-size: 22px;
+          font-size: 20px;
+          color: #fff;
         }
-        &:nth-child(1) i {
-          color: #0077b5;
+        &:nth-child(1) {
+          background: #0077b5;
+          &:hover {
+            background: #00a6ff;
+          }
         }
-        &:nth-child(2) i {
-          color: #4267b2;
+        &:nth-child(2) {
+          background: #333;
+          &:hover {
+            background: #595959;
+          }
         }
-        &:nth-child(3) i {
-          color: #f47f24;
+        &:nth-child(3) {
+          background: #4267b2;
+          &:hover {
+            background: #6a89c8;
+          }
         }
-        &:nth-child(4) i {
-          color: #1da1f2;
+        &:nth-child(4) {
+          background: #f47f24;
+          &:hover {
+            background: #f7a96e;
+          }
         }
-        &:hover {
-          border: 2px solid $lightRed;
+        &:nth-child(5) {
+          background: #1da1f2;
+          &:hover {
+            background: #56b8f5;
+          }
         }
       }
     }

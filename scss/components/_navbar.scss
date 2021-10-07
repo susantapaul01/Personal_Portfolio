@@ -1,13 +1,18 @@
 // =========== Navbar Start ============
 nav {
-  background: $gray;
-  padding: 6px 0px;
+  position: absolute;
+  width: 100%;
+  padding: 20px 0px;
   z-index: 1;
 
   .main {
-    // display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .logo {
+      width: 100%;
+      height: auto;
+    }
 
     .nav-item {
       display: flex;
@@ -52,7 +57,7 @@ nav {
   }
 }
 
-// ===== js Class Start =====
+// ===== js Class Style Start =====
 
 .navlist-show {
   transform: translateY(0) !important;
@@ -64,6 +69,6 @@ nav {
   display: none !important;
 }
 
-// ===== js Class End =====
+// ===== js Class Style End =====
 
 // =========== Navbar Start ============

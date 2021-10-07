@@ -1,8 +1,12 @@
-@import './config';
-@import './navbar';
-@import './banner';
-@import './about';
+@import './utils/config';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/functions.scss';
+@import './utils/grid';
 
-@import './services';
-@import './portfolio';
-@import './responsive';
+// ===== Section Start =====
+
+@import './pages/home.scss';
+@import './layout/responsive';
+
+// ===== Section End =====

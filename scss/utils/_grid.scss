@@ -1,0 +1,31 @@
+// ======== media query frame start ==========
+
+@mixin mobileNav {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin lessMd {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
