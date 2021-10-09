@@ -794,6 +794,7 @@ footer .footer {
       -ms-flex-align: center;
           align-items: center;
   padding: 12px 0px;
+  margin: 0px 10px;
 }
 
 footer .footer .footer__left p {
@@ -1008,6 +1009,10 @@ footer .footer .footer__right a:hover:nth-child(5) {
   form .form__part1 input {
     width: 100%;
   }
+  footer .footer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1066,14 +1071,14 @@ footer .footer .footer__right a:hover:nth-child(5) {
   .contact .contact__box i {
     font-size: 35px;
   }
-  form {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
   form .form__part1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  footer .footer {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -1129,6 +1134,10 @@ footer .footer .footer__right a:hover:nth-child(5) {
   }
   .contact,
   form {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  footer .footer {
     margin-left: 0;
     margin-right: 0;
   }
